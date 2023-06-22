@@ -1,0 +1,192 @@
+.container {
+    display: flex;
+    grid-template-columns: 2;
+    position: relative;
+  }
+
+.container_left {
+    position: absolute;
+    left:0px;
+    top: 0px;
+  }
+
+.container_right {
+    position: absolute;
+    left:700px;
+    top: 0px;
+    width: 770px;
+    height: 750px;
+  } 
+
+.cards_container {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+.cards_container1 {
+    width: 740px;
+    height: 430px;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(1, 22, 17, 0.7);
+    /* background-color: rgba(175, 172, 166, 0.9); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+.players {
+    height: 50px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 2em;
+    background-color: rgba(1, 22, 17, 0.7);
+    border-radius: 10px;
+    color:aliceblue;
+    display: flex;
+    justify-content: Left;
+    align-items: center;
+    list-style: none;
+  }
+
+.cards_player {
+    margin-left: 30px;
+  }
+  
+h3 {
+    color:rgb(239, 245, 240);
+  }
+
+h5 {
+    font-size: 25px;
+    color:rgb(39, 196, 65);
+  }
+
+h6 {
+  font-size: 15px;
+  }
+  
+.error_container {
+    align-self: flex-start;
+  }
+  
+.cardsp1 {
+    float: right;
+    margin-top: -10px;
+  }
+  
+.card {
+    display: inline-block;
+  }
+
+h1{
+    font-size: 2em;
+    color:aliceblue;
+    margin-left: 30px;
+  }
+  
+.button_container {
+    float: right;
+  }
+
+.button{
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: rgb(39, 196, 65);
+    border: 2px solid black;
+  }
+
+.button:hover {
+    background-color: rgb(221, 224, 11);
+  }
+
+.button_remove{
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: rgb(151, 153, 151);
+    border: 2px solid black;
+  }
+
+.button_remove:hover {
+    background-color: rgb(196, 196, 193);
+  }
+
+.commentaar{
+    width: 740px;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(1, 22, 17, 0.7);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.commentary_message{
+    height: 2em;
+    font-weight: bold;
+    color: rgb(244, 248, 8);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+.winner_message {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(244, 248, 8);
+    margin-left: 70px;
+    margin-top: -500px;
+    position: absolute;
+    z-index:2;
+ }
+
+.errorMessagePlay {
+    height: 10px;
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+
+.index-number{
+    font-size: 15px;
+    font-weight: bold;
+    color:  rgb(39, 196, 65);
+    position: absolute;
+    z-index: 1;
+    margin-left: -40px;
+    margin-top: 5px;
+  }
+.card{
+  background-color: #838281; /* Replace with your desired background color */
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.card.selectedP1 {
+    background-color: #ffcc00; /* Replace with your desired background color */
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+  }
+
+.card.selectedP2 {
+    background-color: #ffcc00; /* Replace with your desired background color */
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+  }

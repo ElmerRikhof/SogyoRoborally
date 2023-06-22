@@ -1,0 +1,39 @@
+plugins {
+    // Tell Gradle that we are builing java as a library (non-executable piece of code intended for use by other applications).
+    id 'java'
+    id 'java-library'
+}
+
+repositories {
+    // Specify the repository mirror that we want to download our dependencies from. Maven Central is configured by default when creating a new Gradle project.
+    mavenCentral()
+}
+
+dependencies {
+    // implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+
+	// compileOnly 'org.projectlombok:lombok:1.18.28'
+	// annotationProcessor 'org.projectlombok:lombok:1.18.28'
+	// testCompileOnly 'org.projectlombok:lombok:1.18.28'
+	// testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    // testImplementation "org.springframework.boot:spring-boot-starter-test"
+    // runtimeClasspath "org.springframework.boot:spring-boot-devtools"
+    // runtime "mysql:mysql-connector-java"
+
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    testRuntimeOnly "org.junit.platform:junit-platform-commons:1.8.2"
+    implementation 'jakarta.annotation:jakarta.annotation-api:2.1.1'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
+// implementation project(':database')
+}
+
+test {
+    // For running our tests, use the test runner provided by JUnit.
+    useJUnitPlatform()
+}
